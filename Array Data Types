@@ -43,10 +43,12 @@ var cars = ['honda', 'kia', 'ford']; // output: ['honda', 'kia', 'ford']
 // Composite Data Types:
 - object // typeof {a:1, b:2, c:3} = object
 
+// the way you differentiate the two is with the {object} curly brackets & [array] square brackets
+// Array.isArray([1, 2, 3, 4, 5]) = true
+// Array.isArray({a:1, b:2, c:3}) = false
+
 // an array is an object too.
 typeof ['red', 'blue', 'green'] = object
-
-// the way you differentiate the two is with the {object} curly brackets & [array] square brackets
 
 
 - function // typeof function myFunction() {} = function
@@ -59,3 +61,5 @@ typeof class Animal {} = function
 
 // NaN is the return value from operations which have an undefined numerical result.
 typeof NaN = number
+
+
