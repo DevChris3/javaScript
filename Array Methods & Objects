@@ -1,0 +1,23 @@
+// The Array.isArray() method returns true if an object is an array, otherwise false.
+
+const arr2 = ('apple', 'orange', 'strawberry'); // output: false
+
+const someArr = [43, 6, 15, 28]; // output: true
+
+document.getElementById('demo4').innerHTML = Array.isArray(arr2);
+
+document.getElementById('demo5').innerHTML = Array.isArray(someArr);
+
+// The forEach() method calls a function once for each element in an array, in order.
+
+const numbers = [1, 2, 3, 4, 5];
+
+// one way to list each item in an array using forEach()
+numbers.forEach(num => console.log(num));
+
+// another way to list each item in an array using forEach()
+numbers.forEach(myFunc) // create a function to loop through each element in an array
+
+function myFunc(num){
+  console.log(num);
+}
