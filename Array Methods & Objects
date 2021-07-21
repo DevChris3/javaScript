@@ -87,3 +87,22 @@ function numsFunc(total, value){
 // simplified code
 console.log(nums.reduce((total, value) => total + value, 0));
                 
+// The slice() method returns selected elements in an array, as a new array.
+
+// slice() selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+
+// slice() does not change the original array.
+
+const duplicate = function(sliceArr){
+	return sliceArr.slice(1); // (1) is the start argument
+}
+
+console.log(duplicate([1, 2, 4, 0])); // output: [1, 2, 3, 0]
+
+// another EXAMPLE:
+
+const duplicate = function(sliceArr){
+	return sliceArr.slice(3, 5); // starts at 3 and ends at 5 but doesnt include the last elements
+}
+
+console.log(duplicate([1, 2, 3, 4, 5, 6, 0])); // output: [4, 5] 
