@@ -43,3 +43,47 @@ const words = ['hello', 'bye', 'welcome', 'byebye', 'later', 'be back'];
 const result = words.filter(word => word.length > 5); // returns all the words/strings with the length greater > than 5
 
 console.log(result);
+
+
+// This method check if array includes the item passed in the method.
+
+console.log(words.includes('bye)) // output: true
+console.log(words.includes('byee)) // output: false
+
+// This method create new array by calling the provided function in every element.
+
+const arrNumbers = [1, 2, 3, 4, 5, 6];
+
+const numArr = arrNumbers.map(num => num + 1);
+
+console.log(numArr);
+
+// another way to use the map() method
+// the map() function method 
+
+numArr.map(arrayFunc);
+
+function arrayFunc(num){
+	console.log(num + 1);
+}
+
+const colors = ['blue', 'red', 'yellow', 'green'];
+
+const newColor = colors.map(col => col + ' ' + 'color');
+
+console.log(newColor);
+
+
+// The reduce() method executes a reducer function for each value of an array.
+
+const nums = [1, 2, 3, 4, 5];
+
+document.getElementById('demo7').innerHTML = nums.reduce(numsFunc); display in the browser
+
+function numsFunc(total, value){
+	 return total + value;     // reduce() returns a single value which is the function's accumulated result.
+}
+
+// simplified code
+console.log(nums.reduce((total, value) => total + value, 0));
+                
