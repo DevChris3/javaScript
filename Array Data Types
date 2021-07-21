@@ -22,7 +22,7 @@
 
 
 // Trivial Data Types:
-- null // i have to get a better understanding of null
+- null // currently, doing more research about null
 
 ALSO, 
 
@@ -35,3 +35,27 @@ var cars; // output: undefined
 Instead, 
 
 var cars = ['honda', 'kia', 'ford']; // output: ['honda', 'kia', 'ford'] 
+
+
+
+
+
+// Composite Data Types:
+- object // typeof {a:1, b:2, c:3} = object
+
+// an array is an object too.
+typeof ['red', 'blue', 'green'] = object
+
+// the way you differentiate the two is with the {object} curly brackets & [array] square brackets
+
+
+- function // typeof function myFunction() {} = function
+
+typeof class Animal {} = function
+// a CLASS is a function too.
+
+
+- symbol // typeof Symbol('animal'); = symbol
+
+// NaN is the return value from operations which have an undefined numerical result.
+typeof NaN = number
