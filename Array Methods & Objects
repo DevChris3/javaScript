@@ -19,5 +19,20 @@ numbers.forEach(num => console.log(num));
 numbers.forEach(myFunc) // create a function to loop through each element in an array
 
 function myFunc(num){
-  console.log(num);
+  console.log(num); // [1, 2, 3, 4, 5]
 }
+
+// This Array method() creates an array filled with all the array elements that pass a test 
+// provided by a function:
+
+const filtered = [12, 23, 34, 17, 29, 38, 45, 56, 65, 50];
+
+filtered.filter(checkAges);
+
+document.getElementById('demo').innerHTML = filtered.filter(checkAges);
+
+// declare the function (checkAges)
+function checkAges(age){
+  return age >= 50; // return a filtered array with elements that pass the test age greater > or equal to 50
+}
+
