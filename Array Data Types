@@ -1,0 +1,18 @@
+// Primitive Data Types:
+- string 
+// typeof 'hello' = string
+// typeof '123454' = string
+
+// intergers and floating numbers are the same in JavaScript
+- number 
+// typeof 1231234 = number
+// typeof 1.2132 = number
+
+- boolean
+// typeof true = boolean
+// typeof false = boolean
+
+// numbers that end with n are called BigInt
+- BigInt
+// typeof 12132n = BigInt
+// typeof 1n = BigInt
