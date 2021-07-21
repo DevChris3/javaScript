@@ -29,10 +29,17 @@ const filtered = [12, 23, 34, 17, 29, 38, 45, 56, 65, 50];
 
 filtered.filter(checkAges);
 
-document.getElementById('demo').innerHTML = filtered.filter(checkAges);
+document.getElementById('demo').innerHTML = filtered.filter(checkAges); // DISPLAY IN BROWSER
 
 // declare the function (checkAges)
 function checkAges(age){
   return age >= 50; // return a filtered array with elements that pass the test age greater > or equal to 50
 }
 
+
+// same filter method displayed in the console
+const words = ['hello', 'bye', 'welcome', 'byebye', 'later', 'be back'];
+
+const result = words.filter(word => word.length > 5); // returns all the words/strings with the length greater > than 5
+
+console.log(result);
