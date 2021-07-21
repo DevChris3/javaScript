@@ -16,3 +16,22 @@
 - BigInt
 // typeof 12132n = BigInt
 // typeof 1n = BigInt
+
+
+
+
+
+// Trivial Data Types:
+- null // i have to get a better understanding of null
+
+ALSO, 
+
+- undefined 
+// So, let me elaborate a little...undefined means when you declare a variable which isnt defined for example:
+
+var cars; // output: undefined
+// cars doesnt have any primitive data types to explain what cars define
+
+Instead, 
+
+var cars = ['honda', 'kia', 'ford']; // output: ['honda', 'kia', 'ford'] 
