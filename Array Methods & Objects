@@ -114,3 +114,102 @@ name: 'Chris',
 age: 100
 };
 
+
+
+
+for(let i = 0; i < 5; i++){
+	console.log('Number' + i);
+  if (i === 3) break;
+}
+
+// iterate through an array
+
+const names = ['magic', 'bill', 'russell', 'lebron', 'jason'];
+
+for(let i = 0; i < names.length; i ++){
+	console.log(names[i]);
+}
+
+// another way to iterate through an array is for of
+
+for(let name of names){
+	console.log(name);
+}
+
+const user = {firstName: 'John', lastName: 'Doe'};
+
+for(let key in user) console.log(user[key]);
+
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(myFunction);
+
+function myFunction(num){
+	//const temLiteral = `Number ${num}`;
+	console.log(num);
+}
+
+const checkIf = ['mango', 'banana', 'orange', 'apple'];
+
+console.log(checkIf.includes('mangoo'));
+console.log(checkIf.length);
+
+let i = 0;
+while(i < 10){
+	console.log(i)
+  i++;
+}
+
+const num1 = [1, 2, 3, 4, 5];
+
+// const map1 = num1.map(x => x * 2);
+num1.map(myFunc);
+
+function myFunc(x){
+	console.log(x * 2);
+}
+
+const words = ['first', 'second', 'third', 'fourth', 'fifth'];
+
+words.map(wordFunc);
+
+function wordFunc(mapping){
+	console.log(mapping);
+}
+
+const everyOne = ['a', 'b', 'c'];
+
+everyOne.forEach(anyThing => console.log(anyThing)); 
+
+const reverseArr = ['one', 'two', 'three'];
+
+console.log(reverseArr.reverse());
+
+const greetings = ['Hello, I am Gary', 'Bye, see ya later', 'Welcome to sweettooth'];
+
+// arrow functions
+// greetings.forEach(greet => console.log(greet));
+
+greetings.forEach(greetFunc);
+
+function greetFunc(greet){
+	console.log(greet);
+}
+
+// converts the elements of an array into a string
+console.log(greetings.join(' '));
+
+const arrString = ['this array', 'will turn', 'into a', 'string'];
+
+console.log(arrString.join(' ')); // output: 'this array will turn into a string'
+
+let vehicles = ['lexus', 'porsche', 'honda', 'audi'];
+
+vehicles.push('bmw'); // add an item into the array
+const cars = vehicles.push('maserati'); // returns the new array length
+
+console.log(vehicles);
+console.log(cars);
+
+vehicles.pop(); // removes the last item in an array
+console.log(vehicles);
