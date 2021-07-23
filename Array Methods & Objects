@@ -213,3 +213,18 @@ console.log(cars);
 
 vehicles.pop(); // removes the last item in an array
 console.log(vehicles);
+
+
+// slice() method returns selected elements in an array
+// starting at the given START arg and END arg but doesn't include the END arg
+
+console.log(vehicles.slice(1, 3));
+
+// adds and/or removes array elements
+vehicles.splice(4, 5, 'kia', 'ford');
+console.log(vehicles);
+
+// using splice() method ti removes array elements
+vehicles.splice(4, 5);
+console.log(vehicles);
+
