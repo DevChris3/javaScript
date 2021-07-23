@@ -106,3 +106,11 @@ const duplicate = function(sliceArr){
 }
 
 console.log(duplicate([1, 2, 3, 4, 5, 6, 0])); // output: [4, 5] 
+
+
+// objects use names to access its 'members'
+const people = {
+name: 'Chris',
+age: 100
+};
+
