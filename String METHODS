@@ -15,6 +15,9 @@ function reversedString(str){
   
   let strReversed = reverseStr.join(); // third use the join() method to convert the array into a string
   return strReversed;
+  
+  // simplified code from above
+  // return str.split('').reverse().join('');
 }
 
 console.log(reversedString('friends')); // output: s,d,n,e,i,r,f
