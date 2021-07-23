@@ -1,0 +1,20 @@
+// convert a string into an array:
+const word = 'How Are You Doing Today';
+
+const strArr = word.split(' ');
+
+console.log(strArr);
+
+
+// write a function that returns a string backwards:
+
+function reversedString(str){
+  let strArr = str.split(''); // first split the string into an array
+  
+  let reverseStr = strArr.reverse(); // second reverse the array
+  
+  let strReversed = reverseStr.join(); // third use the join() method to convert the array into a string
+  return strReversed;
+}
+
+console.log(reversedString('friends')); // output: s,d,n,e,i,r,f
