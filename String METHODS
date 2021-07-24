@@ -21,3 +21,21 @@ function reversedString(str){
 }
 
 console.log(reversedString('friends')); // output: s,d,n,e,i,r,f
+
+
+// START FROM SCRATCH:
+
+// write a function that returns a string backwards:
+
+function reversedString(str){
+  let final = ''; // empty string
+  for (let i = str.length -1; i >= 0; i--){ // start string from last element
+  																					// as long as i is greater or equal to 0
+                                            // i decrement
+                                            
+  	final += str[i]; // add backwards string into a empty string
+  }
+  return final;
+}
+
+console.log(reversedString('friends')); // output: s,d,n,e,i,r,f
