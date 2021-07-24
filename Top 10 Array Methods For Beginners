@@ -1,0 +1,98 @@
+// Array methods:
+
+const numbers = [1, 2, 3, 4, 5];
+
+// push method adds a new item to the end of an array
+const count = numbers.push('i am new');
+console.log(count); // output: 6
+
+console.log(numbers) // output: [1, 2, 3, 4, 5, 'i am new'];
+
+numbers.push('then i joined', 'now i am here too!');
+console.log(numbers);
+
+
+// pop method removes the last element of an array
+const names = ['john', 'larry', 'kim', 'ben'];
+
+console.log(names.pop()); // output: 'ben'
+
+console.log(names); // output: ['john', 'larry', 'kim']
+
+// shift method removes the first element of an array
+const removed = names.shift(); // returns the element that was removed
+
+console.log(names); // output: ['larry', 'kim']
+
+console.log(removed); // output: 'john'
+
+// unshift method adds new items to the beginning of an array
+const addOn = names.unshift('chris', 'junior'); // output: 4
+console.log(addOn);
+
+console.log(names); // output ["chris", "junior", "larry", "kim"]
+
+// splice method change the original array by inserting, removing, and replacing elements.
+names.splice(1, 0, 'billy'); // inserts at index 1
+console.log(names); // output: ["chris", "billy", "junior", "larry", "kim"]
+
+names.splice(3, 1, 'george'); // replaces 1 element at index 3
+console.log(names); // ["chris", "billy", "junior", "george", "kim"]
+
+// to remove an element... dont insert a value
+names.splice(0, 1); // removes 1 element from index 0
+console.log(names); // output: ["billy", "junior", "george", "kim"]
+
+
+// slice method returns selected elements in an array
+const cars = ['lexus', 'honda', 'benz', 'porsche', 'corvette', 'mustang'];
+console.log(cars.slice(2)); // output: ['benz', 'porsche', 'corvette', 'mustang']
+console.log(cars.slice(-2)); // output: ["corvette", "mustang"]
+
+// selects the elements starting at the given arg and end but doesnt include the end arg
+console.log(cars.slice(2, 4)); // output: ['benz', 'porsche']
+
+console.log(cars.slice(1, 5)); //output: ["honda", "benz", "porsche", "corvette"]
+
+console.log(cars.slice(2, -1)); // output: ['benz', 'porsche', 'corvette']
+
+// includes method returns TRUE if an array contains a specified element, otherwise FALSE
+console.log(cars.includes('benz')); // output: true
+
+console.log(cars.includes('ford')); // output: false
+
+
+// forEach method calls a function once for each element in an array
+const alphabets = ['a', 'b', 'c']; 
+alphabets.forEach(abcs);
+
+function abcs(car){
+	console.log(car);  // output: 'a'
+  									 // output: 'b'
+                     // output: 'c'
+}
+
+
+// join method returns an array as a string
+const greeting = ['h', 'e', 'l', 'l', 'o'];
+
+console.log(greeting.join()); // output: 'h,e,l,l,o'
+console.log(greeting.join('')); // output: 'hello'
+console.log(greeting.join(' ')); // output: 'h e l l o'
+console.log(greeting.join('-')); // output: 'h-e-l-l-o'
+
+
+// toString method converts an array into a string
+// returns string as a result
+
+const arr = ['let', 'me', 'know', 'by', 'midnight'];
+
+console.log(arr.toString()); // output: 'let,me,know,by,midnight'
+
+
+// Array.isArray method determines whether the passed value is an array
+console.log(Array.isArray([1, 2, 3])); // output: true
+console.log(Array.isArray(['one', 'two', 'three'])); // output: true
+console.log(Array.isArray({name: 'chris'})); // output: false
+console.log(Array.isArray('string')); // output: false
+
