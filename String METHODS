@@ -52,12 +52,38 @@ console.log(message.replace("welcome", "bring")); // replace "welcome" with "bri
 // searches a string for a specified value, and returns the position of the match.
 console.log(newStr.search("World")); // returns: 5
 
-// extracts parts of a string and returns the extracted parts in a new string.
-console.log(newStr.slice(0, 5)); // returns: "Hello"
-
 // splits a string into an array of substrings, and returns the new array.
 console.log(newStr.split(""));// ["H", "e", "l", "l", "o", "W", "o", "r", "l", "d"]
 
 // returns a boolean if a string startsWith() a specified value
 console.log(newStr.startsWith('Hello')); // true
 console.log(newStr.startsWith('hello')); // false
+
+
+let myString = "I am learning JavaScript";
+
+// extracts parts of a string, beginning at the character at a specified position, and returns a specified number of characters.
+console.log(myString.substr(-6)); // returns: "Script" 
+console.log(myString.substr(5)); // returns: "learning JavaScript"
+
+// extracts characters, between to indices (positions), from a string, and returns the substring.
+console.log(myString.substring(0, 13)); // return: "I am learning"
+console.log(myString.substring(5)); // returns: "learning JavaScript"
+
+// extracts parts of a string and returns the extracted parts in a new string.
+console.log(myString.slice(0, 10)); // returns: "I am learn"
+console.log(myString.slice(5)); // returns: "learning JavaScript"
+
+
+let strCase = "Hello World";
+
+// converts string to lowerCase()
+console.log(strCase.toLowerCase());
+
+// converts string to upperCase()
+console.log(strCase.toUpperCase());
+
+// ONLY TIME I WOULD RECOMMEND USING toString() method to convert an array to a string
+let arr = ['Lets', 'Do', 'It'];
+
+console.log(arr.toString());
