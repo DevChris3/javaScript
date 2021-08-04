@@ -1,0 +1,45 @@
+let str = "Hello";
+console.log(str);
+
+let str1 = "World"
+console.log(str1);
+let newStr = str += str1;
+
+console.log(newStr);
+
+// returns the string length
+console.log(newStr.length);
+
+// return first character in a string
+console.log(newStr.charAt(0))
+
+// return last character in a string
+console.log(newStr.charAt(newStr.length -1))
+
+let one = 'One';
+
+let two = 'Two';
+
+// concat() joins two or more string
+let oneTwo = one.concat(two);
+
+console.log(oneTwo);
+
+// returns a boolean if a string endsWith() a specified value
+console.log(newStr.endsWith("World")); // true
+console.log(newStr.endsWith("world")); // false
+
+// returns a boolean if a string contains a specified value
+console.log(newStr.includes('hello')); // false
+console.log(newStr.includes('Hello')); // true
+
+// returns the position of the first occurrence of a specified value in a string.
+console.log(newStr.indexOf("World")); // index: 5
+console.log(newStr.indexOf("H")); // index: 0
+
+
+let message = "i welcome you to my business, this is my business and i welcome you";
+
+// returns the position of the last occurrence of a specified value in a string.
+console.log(message.lastIndexOf("welcome")); // index: 56
+
