@@ -1,0 +1,70 @@
+// DATE OBJECT
+
+let date = new Date();
+
+console.log(date.getMinutes()); // returns the minutes in the hour of the day
+console.log(date.getHours()); // returns the hours of the day
+console.log(date.getDay()); // returns the day of the week in number value (0-7)
+console.log(date.getMonth()); // returns the month of the year in number value
+console.log(date.getFullYear()); // returns the full year (2021)
+
+let hour = date.getHours();
+let min = date.getMinutes();
+
+console.log(`${hour}:${min}`); // returns the hour and minutes: 00:00
+
+let day = date.toLocaleString('default', {weekday: 'long'}); // returns the day of the week in text value: (monday-friday)
+
+console.log(day);
+
+
+
+// MATH OBJECT
+
+const PI = Math.PI;
+console.log(PI);
+
+// rounds up the number and returns: 3.14 or 2 numbers after the decimal point
+console.log(PI.toFixed(2));
+
+// rounds up the number and returns: 3.1416 or 5 precision numbers without decimal point
+console.log(PI.toPrecision(5));
+
+let aMilli = 1000000;
+console.log(aMilli.toExponential()); // returns: 1e+6 or first character and e stands for exponenetial + 6 0's
+
+// returns the minimum number
+let minimum = Math.min(32, 6, 13, 17, 1, 43, 19);
+console.log(minimum); // returns: 1
+
+// returns the maximum number
+let maximum = Math.max(8, 17, 435, 54, 3, 12, 23, 1);
+console.log(maximum); // returns: 435
+
+// returns the powerth number
+let pow = Math.pow(5, 2);
+console.log(pow);
+
+// Math.random() returns a random decimal number
+let random = Math.random();
+console.log(random);
+
+// Math.floor() returns the whole number of a decimal
+console.log(Math.floor(5.7)); // returns 5
+
+// Math.round() returns the number rounded
+console.log(Math.round(5.4)); // returns: 5
+console.log(Math.round(5.6)); // returns: 6
+
+// BELOW IS AN EXCERCISE 
+
+let num1 = Math.random().toFixed(1) * 10;
+
+let num2 = Math.random().toFixed(1) * 10;
+
+let num3 = Math.random().toFixed(1) * 10;
+
+let max = Math.max(num1, num2, num3);
+
+console.log(num1, num2, num3);
+console.log(max);
