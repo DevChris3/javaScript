@@ -1,0 +1,64 @@
+// COMPARISON OPERATORS
+// RETURNS BOOLEAN VALUES
+
+let x = 7;
+
+// more > than
+console.log(x > 10); // returns: false
+
+// more than >= or equal to
+console.log(x >= 10); // returns: false
+console.log(x >= 7); // returns: true
+
+// less < than
+console.log(x < 7); // returns: false
+
+// less than <= or equal to
+console.log(x <= 7); // returns: true
+
+// equal == to
+console.log(x == 7); // returns: true
+
+// not != equal to
+console.log(x != 7); // return: false
+
+
+let y = "7"
+// strict === equal to
+console.log(y === "7"); // returns: true
+console.log(y === 7); // returns: false
+
+// strict not !== equal to
+console.log(x !== y); // returns: false
+
+
+// ALSO COMPARE LETTERS AND WORDS
+ console.log('A' > 'Z'); // returns: false
+ 
+ let a = 'Time';
+ let b = 'Timing';
+ 
+ console.log(a > b); // returns false
+ 
+ // Explanation is because 'Tim' in both words are the same...
+ // However, when camparing e > i that would become false
+ console.log('e' > 'i'); // returns false
+
+
+// LOGICAL OPERATORS
+
+let num1 = 10;
+let num2 = 10;
+
+// AND && logical operator
+// both assignments must be true
+console.log(num1 > 9 && num2 < 11); // returns: true
+console.log(num1 > 9 && num2 > 11) // returns: false
+
+// OR || logical operator
+// only one or more assignments must be true
+console.log(num1 > 9 || num2 > 11); // returns: true
+console.log(num1 > 11 || num2 < 9); // returns: false
+
+// NOT ! logical operator
+console.log(!num1 == num2); // returns: false
