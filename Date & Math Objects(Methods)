@@ -68,3 +68,34 @@ let max = Math.max(num1, num2, num3);
 
 console.log(num1, num2, num3);
 console.log(max);
+
+
+
+
+
+
+let aPar = parseInt('1oo'); // parseInt only returns a number: 1
+console.log(aPar);
+
+let aPar1 = parseInt('H3') // returns: (NaN) because parseInt only returns numbers  
+console.log(aPar1);
+
+let a = parseInt('10'); // converts string into a whole number: 10
+let b = parseInt('10.00'); // converts decimal into a whole number: 10
+let c = parseInt('10.33'); // converts decimal into a whole number: 10
+
+let x = parseFloat('10'); // converts string into a float point number: 10
+let y = parseFloat('10.40'); // converts string into a floating point number: 10.4
+let z = parseFloat('10.506'); // converts string into a floating point number: 10.506
+
+console.log(a, b, c, x, y, z);
+
+
+let num = parseInt("0x10"); // is string starts with "Ox" returns: 16 (hexidecimal)
+console.log(num);
+
+num = parseInt('10', 8); // parseInt() ignores the string: 8
+console.log(num);
+
+num = parseInt('o112o'); // returns: NaN
+console.log(num);
