@@ -1,0 +1,227 @@
+let cars = ['Lexus', 'Benz', 'Honda', 'BMW', 'Audi'];
+
+console.log(cars);
+
+// access values by its index in an array
+console.log(cars[2]);
+
+// add items to array
+cars.push('Kia');
+console.log(cars);
+
+// remove items from array
+cars.pop();
+console.log(cars);
+
+// return index number of an array value
+
+// store indexOf in a variable
+let vehicles = cars.indexOf('Honda');
+
+console.log(vehicles);
+console.log(cars[vehicles]); // returns the value 'Honda' in the array
+
+//
+const numbers = [1, 2, 3, 4, 5];
+
+const numbersDouble = numbers.map(myFunc)
+
+function myFunc(value, index, arr) {
+    return value * 2;
+}
+
+console.log(numbers); // returns a new array but map() doesn't change existing array
+console.log(numbersDouble); // returns each array value * 2
+
+// map() creates a new array, populated with the results of calling a function on every array element
+const nums = [1, 2, 3, 4, 5];
+
+const doubleNumber = nums.map(multiply);
+
+function multiply(value, index, arr) {
+    return value * index;
+}
+
+console.log(doubleNumber);
+
+const names = ['john', 'kenny', 'george', 'bob', 'eric', 'jacob'];
+
+const everyName = names.map(checkMe);
+
+function checkMe(value, index, arr) {
+   return value + index;
+}
+
+console.log(everyName);
+
+
+const mixedNumbers = [1, 11, 12, 3, 17, 6, 9, 2];
+
+const mixNumbers = mixedNumbers.map(everyNumber)
+
+function everyNumber(value) {
+    return value + 2;
+}
+
+console.log(mixNumbers);
+
+const randWords = ['Hello', 'Goodbye', 'Welcome', 'See ya later'];
+
+const words = randWords.map(randomWords);
+
+function randomWords(value, index, array) {
+    return value + 'Chris';
+}
+
+console.log(words);
+
+const firstName = ['johnny', 'ben', 'jason', 'kendall', 'billy'];
+
+const newArray = firstName.map(function (value, index, array) {
+    return index + ": " + value + "! " + this.name + this.age;
+}, {
+    name: "hello",
+    age: 26
+});
+console.log(newArray);
+
+
+
+// COMPARING FOR LOOPS TO ARRAY METHODS
+
+// an array of objects
+const companies = [
+    {name: "Company One", category: "Finance", start: 1993, end: 2005},
+    {name: "Company Two", category: "Retail", start: 1998, end: 2006},
+    {name: "Company Three", category: "Auto", start: 2000, end: 2008},
+    {name: "Company Four", category: "Finance", start: 1981, end: 1996},
+    {name: "Company Five", category: "Technology", start: 2001, end: 2011},
+    {name: "Company Six", category: "Retail", start: 1999, end: 2014},
+    {name: "Company Seven", category: "Auto", start: 2002, end: 2012},
+    {name: "Company Eight", category: "Technology", start: 1997, end: 2013}
+];
+
+// an array of primitives (numbers)
+const ages = [17, 23, 32, 43, 27, 21, 15, 16, 54, 62, 46, 37];
+
+// for loop
+// for(let i = 0; i < companies.length; i++){
+//     console.log(companies[i]);
+// }
+
+// forEach() method
+// companies.forEach(function(company, index, array) {
+//     console.log(company);
+// })
+
+
+// for loop
+// let canDrink = [];
+// for(let i = 0; i < ages.length; i ++) {
+//     if(ages[i] >= 21) {         // check ages for ages older than 21
+//         canDrink.push(ages[i]); // push any age over 21 into array
+//     }
+// }
+
+// console.log(canDrink);
+
+// filter() method
+const canDrink = ages.filter(function(age) {
+    if(age >= 21) {
+        return true;
+    }
+})
+
+// arrow function
+const result = ages.filter(num => num >= 21);
+
+console.log(result);
+console.log(canDrink);
+
+
+// GET PEOPLE AGE OLDER THAN 24
+const peopleAge = [18, 15, 23, 28, 32, 25, 21, 37];
+// for each executes a provided function once for each array element
+peopleAge.forEach(function(age) {
+    if(age > 24) {
+        console.log(age);
+    }
+})
+
+
+// FILTERING PEOPLE AGE LESS THAN OR EQUAL TO 20
+const filtering = [8, 17, 20, 32, 43, 31, 65, 54, 28, 24, 38, 11, 5];
+// filter creates a new array filled with all elements that pass a test
+const nameFilter = filtering.filter(function(pplAge) {
+    if(pplAge <= 20) {
+        return true;
+    }
+});
+
+console.log(nameFilter);
+
+
+// GET COMPANIES THAT ARE ONLY RETAIL COMPANIES
+// const retailCompanies = companies.filter(comps);
+
+// function comps(x) {
+//     if(x.category === 'Retail') {
+//         return true;
+//     }
+// };
+// console.log(retailCompanies)
+
+// filter arrow function
+console.log(companies.filter(comps => comps.category === 'Retail')); 
+
+
+// GET 80'S & 90's COMPANIES
+const businesses = companies.filter(business => business.start >= 1980 && business.start < 2000);
+
+console.log(businesses);
+
+
+
+// map() method
+// create an array of company names
+const companyNames = companies.map(function(company) {
+    return company.name;
+})
+
+console.log(companyNames);
+
+
+// sort() method
+// SORT COMPANIES BY START YEAR
+// const sortedCompanies = companies.sort(function(c1, c2) {
+//     if(c1.start > c2.start) {
+//         return 1;
+//     } else {
+//         return -1;
+//     }
+// });
+
+const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1));
+console.log(sortedCompanies);
+
+
+// reduce() method
+// ADD ALL THE AGES TOGETHER
+
+let ageSum = 0;
+
+for(let i = 0; i < ages.length; i++) {
+    ageSum += ages[i];
+}
+
+
+// reduce() method
+// ADD ALL THE AGES TOGETHER
+
+// const ageSumm = ages.reduce(function(total, age) {
+//     return total + age;
+// }, 0);
+
+// reduce arrow function
+const ageSumm = ages.reduce((total, age) => total + age, 0);
+console.log(ageSumm);
