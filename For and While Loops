@@ -32,3 +32,22 @@ while (i < 10) {
 };
 
 console.log(nums);
+
+
+// NESTED FOR LOOPS
+
+// ACCESSING MULTI DEMENSIONAL ARRAY
+function multiplyNumbers(num) {
+    let item = 1; // 1 is the number we start from as we iterate over the nested array
+    
+    for (let i = 0; i < num.length; i++) {
+      for (let j = 0; j < num[i].length; j++) { // here we check the num[i].length 
+        item *= num[i][j] // multiply item by num[i][j] index
+      }
+    }
+    // Only change code above this line
+    return item;
+  }
+  
+  
+ console.log(multiplyNumbers([[1,2],[3,4],[5,6,7]]));
