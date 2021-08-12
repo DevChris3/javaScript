@@ -1,0 +1,19 @@
+// DO...WHILE LOOP
+let myArray = [];
+let digit = 10;
+
+// DOES ONE CONDITION FIRST BEFORE MOVING ON THE THE WHILE LOOP
+do {
+  myArray.push(digit); // ADD 10 TO myArray array
+  digit++; // increment
+} while (digit < 10); // executes the while i < 10 
+
+console.log(myArray) // output: [10]
+console.log(digit); // output: 11
+
+
+
+
+
+
+to be continued....
