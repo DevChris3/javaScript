@@ -1,0 +1,52 @@
+// Accessing and Modifying Nested Arrays
+
+// nested array = array of arrays
+let arr = [['Cavs', 23], ['Miami Heat', 6], ['Lakers', 24], ['Lakers', 8], ['Bulls', 23]];
+
+console.log(arr[1][0]); // output: 'Miami Heat'
+
+
+
+// ACCESSING NESTED ARRAYS
+let myCars = [
+    {
+        car: "audi",
+        carColors: [
+            "black",
+            "blue",
+            "green"
+        ]
+    },
+    {
+        car: "bmw",
+        carColors: [
+            "red",
+            "orange",
+            "gray"
+        ]
+    }
+];
+
+// chaining dot and bracket notation to access nested arrays indexes
+console.log(myCars[1].carColors[0]); // output: 'red
+console.log(myCars[0].carColors[2]); // output: 'green
+
+
+
+
+// ACCESSING NESTED OBJECTS
+let myMusic = {
+    album: {
+        title: {
+            name: "Forest Hills Drive",
+            releaseYear: 2014
+        },
+        artist: {
+            rapper: "J.Cole"
+        }
+    }
+}
+
+// chaining dot and bracket notation
+console.log(myMusic["album"].artist["rapper"]); // output: "J.Cole"
+console.log(myMusic.album.title.name); // output: "Forest Hills Drive"
