@@ -9,11 +9,11 @@ console.log(strArr);
 // write a function that returns a string backwards:
 
 function reversedString(str){
-  let strArr = str.split(''); // first split the string into an array
+  const strArr = str.split(''); // first split the string into an array
   
-  let reverseStr = strArr.reverse(); // second reverse the array
+  const reverseStr = strArr.reverse(); // second reverse the array
   
-  let strReversed = reverseStr.join(); // third use the join() method to convert the array into a string
+  const strReversed = reverseStr.join(); // third use the join() method to convert the array into a string
   return strReversed;
   
   // simplified code from above
@@ -28,7 +28,7 @@ console.log(reversedString('friends')); // output: s,d,n,e,i,r,f
 // write a function that returns a string backwards:
 
 function reversedString(str){
-  let final = ''; // empty string
+  const final = ''; // empty string
   for (let i = str.length -1; i >= 0; i--){ // start string from last element
   																					// as long as i is greater or equal to 0
                                             // i decrement
