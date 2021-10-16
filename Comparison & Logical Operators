@@ -1,7 +1,7 @@
 // COMPARISON OPERATORS
 // RETURNS BOOLEAN VALUES
 
-let x = 7;
+const x = 7;
 
 // more > than
 console.log(x > 10); // returns: false
@@ -23,7 +23,7 @@ console.log(x == 7); // returns: true
 console.log(x != 7); // return: false
 
 
-let y = "7"
+const y = "7"
 // strict === equal to
 console.log(y === "7"); // returns: true
 console.log(y === 7); // returns: false
@@ -35,8 +35,8 @@ console.log(x !== y); // returns: false
 // ALSO COMPARE LETTERS AND WORDS
  console.log('A' > 'Z'); // returns: false
  
- let a = 'Time';
- let b = 'Timing';
+ const a = 'Time';
+ const b = 'Timing';
  
  console.log(a > b); // returns false
  
@@ -47,8 +47,8 @@ console.log(x !== y); // returns: false
 
 // LOGICAL OPERATORS
 
-let num1 = 10;
-let num2 = 10;
+const num1 = 10;
+const num2 = 10;
 
 // AND && logical operator
 // both assignments must be true
@@ -64,7 +64,7 @@ console.log(num1 > 11 || num2 < 9); // returns: false
 console.log(!num1 == num2); // returns: false
 
 // Nullish Coalescing
-let course; // undefined
+const course; // undefined
 
 // Nullish Coalescing operator returns the first defined value
 
