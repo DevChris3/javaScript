@@ -1,4 +1,4 @@
-let cars = ['Lexus', 'Benz', 'Honda', 'BMW', 'Audi'];
+const cars = ['Lexus', 'Benz', 'Honda', 'BMW', 'Audi'];
 
 console.log(cars);
 
