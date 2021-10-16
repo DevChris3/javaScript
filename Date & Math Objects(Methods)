@@ -1,6 +1,6 @@
 // DATE OBJECT
 
-let date = new Date();
+const date = new Date();
 
 console.log(date.getMinutes()); // returns the minutes in the hour of the day
 console.log(date.getHours()); // returns the hours of the day
@@ -8,12 +8,12 @@ console.log(date.getDay()); // returns the day of the week in number value (0-7)
 console.log(date.getMonth()); // returns the month of the year in number value
 console.log(date.getFullYear()); // returns the full year (2021)
 
-let hour = date.getHours();
-let min = date.getMinutes();
+const hour = date.getHours();
+const min = date.getMinutes();
 
 console.log(`${hour}:${min}`); // returns the hour and minutes: 00:00
 
-let day = date.toLocaleString('default', {weekday: 'long'}); // returns the day of the week in text value: (monday-friday)
+const day = date.toLocaleString('default', {weekday: 'long'}); // returns the day of the week in text value: (monday-friday)
 
 console.log(day);
 
@@ -30,23 +30,23 @@ console.log(PI.toFixed(2));
 // rounds up the number and returns: 3.1416 or 5 precision numbers without decimal point
 console.log(PI.toPrecision(5));
 
-let aMilli = 1000000;
+const aMilli = 1000000;
 console.log(aMilli.toExponential()); // returns: 1e+6 or first character and e stands for exponenetial + 6 0's
 
 // returns the minimum number
-let minimum = Math.min(32, 6, 13, 17, 1, 43, 19);
+const minimum = Math.min(32, 6, 13, 17, 1, 43, 19);
 console.log(minimum); // returns: 1
 
 // returns the maximum number
-let maximum = Math.max(8, 17, 435, 54, 3, 12, 23, 1);
+const maximum = Math.max(8, 17, 435, 54, 3, 12, 23, 1);
 console.log(maximum); // returns: 435
 
 // returns the powerth number
-let pow = Math.pow(5, 2);
+const pow = Math.pow(5, 2);
 console.log(pow);
 
 // Math.random() returns a random decimal number
-let random = Math.random();
+const random = Math.random();
 console.log(random);
 
 // Math.floor() returns the whole number of a decimal
@@ -58,13 +58,13 @@ console.log(Math.round(5.6)); // returns: 6
 
 // BELOW IS AN EXCERCISE 
 
-let num1 = Math.random().toFixed(1) * 10;
+const num1 = Math.random().toFixed(1) * 10;
 
-let num2 = Math.random().toFixed(1) * 10;
+const num2 = Math.random().toFixed(1) * 10;
 
-let num3 = Math.random().toFixed(1) * 10;
+const num3 = Math.random().toFixed(1) * 10;
 
-let max = Math.max(num1, num2, num3);
+const max = Math.max(num1, num2, num3);
 
 console.log(num1, num2, num3);
 console.log(max);
@@ -74,24 +74,24 @@ console.log(max);
 
 
 
-let aPar = parseInt('1oo'); // parseInt only returns a number: 1
+const aPar = parseInt('1oo'); // parseInt only returns a number: 1
 console.log(aPar);
 
-let aPar1 = parseInt('H3') // returns: (NaN) because parseInt only returns numbers  
+const aPar1 = parseInt('H3') // returns: (NaN) because parseInt only returns numbers  
 console.log(aPar1);
 
-let a = parseInt('10'); // converts string into a whole number: 10
-let b = parseInt('10.00'); // converts decimal into a whole number: 10
-let c = parseInt('10.33'); // converts decimal into a whole number: 10
+const a = parseInt('10'); // converts string into a whole number: 10
+const b = parseInt('10.00'); // converts decimal into a whole number: 10
+const c = parseInt('10.33'); // converts decimal into a whole number: 10
 
-let x = parseFloat('10'); // converts string into a float point number: 10
-let y = parseFloat('10.40'); // converts string into a floating point number: 10.4
-let z = parseFloat('10.506'); // converts string into a floating point number: 10.506
+const x = parseFloat('10'); // converts string into a float point number: 10
+const y = parseFloat('10.40'); // converts string into a floating point number: 10.4
+const z = parseFloat('10.506'); // converts string into a floating point number: 10.506
 
 console.log(a, b, c, x, y, z);
 
 
-let num = parseInt("0x10"); // is string starts with "Ox" returns: 16 (hexidecimal)
+const num = parseInt("0x10"); // is string starts with "Ox" returns: 16 (hexidecimal)
 console.log(num);
 
 num = parseInt('10', 8); // parseInt() ignores the string: 8
