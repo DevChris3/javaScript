@@ -1,65 +1,29 @@
 // Primitive Data Types:
-- string 
+#1 STRING 
 // typeof 'hello' = string
 // typeof '123454' = string
 
 // intergers and floating numbers are the same in JavaScript
-- number 
+#2 NUMBER
 // typeof 1231234 = number
 // typeof 1.2132 = number
 
-- boolean
+// returns TRUE OR FALSE
+#3 BOOLEAN
 // typeof true = boolean
 // typeof false = boolean
 
 // numbers that end with n are called BigInt
-- BigInt
+#4 BigInt
 // typeof 12132n = BigInt
 // typeof 1n = BigInt
 
+#5 NULL
+// null represents a empty or unknown value
+// typeof null = null
+const something = []
 
-
-
-
-// Trivial Data Types:
-- null // currently, doing more research about null
-
-ALSO, 
-
-- undefined 
-// So, let me elaborate a little...undefined means when you declare a variable which isnt defined for example:
-
-var cars; // output: undefined
-// cars doesnt have any primitive data types to explain what cars define
-
-Instead, 
-
-var cars = ['honda', 'kia', 'ford']; // output: ['honda', 'kia', 'ford'] 
-
-
-
-
-
-// Composite Data Types:
-- object // typeof {a:1, b:2, c:3} = object
-
-// the way you differentiate the two is with the {object} curly brackets & [array] square brackets
-// Array.isArray([1, 2, 3, 4, 5]) = true
-// Array.isArray({a:1, b:2, c:3}) = false
-
-// an array is an object too.
-typeof ['red', 'blue', 'green'] = object
-
-
-- function // typeof function myFunction() {} = function
-
-typeof class Animal {} = function
-// a CLASS is a function too.
-
-
-- symbol // typeof Symbol('animal'); = symbol
-
-// NaN is the return value from operations which have an undefined numerical result.
-typeof NaN = number
-
-
+#6 UNDEFINED
+// undefined indicates a variable has not been assigned a value or declared
+typeof undefined = undefined
+const something;
