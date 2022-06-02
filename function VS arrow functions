@@ -1,0 +1,75 @@
+const items = [
+    {name: 'Laptop', price: 106},
+    {name: 'Bike', price: 110},
+    {name: 'Hoodie', price: 100},
+    {name: 'Necklace', price: 95},
+    {name: 'TV', price: 114},
+    {name: 'Iphone', price: 103},
+    {name: 'Ipad', price: 105},
+    {name: 'BookShelf', price: 98},
+    {name: 'Controller', price: 92},
+    {name: 'TV', price: 101},
+];
+
+// filter() method
+// console.log(items.filter);
+
+// function greet() {
+//     console.log('Hello World!');
+// }
+
+// greet();
+
+// // function parameter(arg)
+// function greet1(name) { // (name) is a parameter
+//     console.log('Goodbye ' + name);
+// }
+
+// // pass a value to the function
+// greet1('John'); // ('John') is an arg
+// greet1('Mary'); // ('Mary') is an arg
+
+// //function can have multiply parameters
+// function greet2(firstName, lastName) {
+//     greeting = `Hello ${firstName} ${lastName}`
+//     console.log(greeting);
+// }
+
+// greet2("Benny", "Butcher");
+
+
+// function VS arrow functions
+
+// example #1
+function sum(num1, num2) {
+    return num1 + num2
+}
+// example #2
+let sum1 = (num1, num2) => {
+    return num1 + num2
+}
+// example #3
+// let sum1 = (num1, num2) => num1 + num2
+
+// example #1
+function isPositive(number) {
+    return number >= 0
+}
+
+// example #2 simplified
+let isPositive1 = (number) => number >= 0
+
+// example #1
+function randomNumber() {
+    return Math.random
+}
+
+// example #2 simplified
+let randNumber = () => Math.random
+
+
+document.addEventListener('click', function(){
+    console.log('Click');
+})
+
+document.addEventListener('click', () => console.log('Click'));
