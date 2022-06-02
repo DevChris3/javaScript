@@ -1,35 +1,45 @@
 // COMPARISON OPERATORS
 // RETURNS BOOLEAN VALUES
+// TRUE OR FALSE
 
-const x = 7;
+const num = 7;
 
-// more > than
-console.log(x > 10); // returns: false
+// greater > than operator
+console.log(num > 10); // returns: false
 
-// more than >= or equal to
-console.log(x >= 10); // returns: false
-console.log(x >= 7); // returns: true
+// greater than >= or equal to operator
+console.log(num >= 10); // returns: false
+console.log(num >= 7); // returns: true
 
-// less < than
-console.log(x < 7); // returns: false
+// less < than operator
+console.log(num < 7); // returns: false
 
-// less than <= or equal to
-console.log(x <= 7); // returns: true
+// less than <= or equal to operator
+console.log(num <= 7); // returns: true
 
-// equal == to
-console.log(x == 7); // returns: true
+// equal == to operator
+// == doesn't compare for Data Type
+console.log(num == "7"); // returns: true
+console.log(num == 7); // returns: true
 
-// not != equal to
-console.log(x != 7); // return: false
+// not != equal to operator
+console.log(num != 7); // return: false
 
 
-const y = "7"
+const number = "7"
 // strict === equal to
-console.log(y === "7"); // returns: true
-console.log(y === 7); // returns: false
+// === compares Data Type & value
+console.log(number === "7"); // returns: true
+console.log(number === 7); // returns: false
 
 // strict not !== equal to
-console.log(x !== y); // returns: false
+console.log(number !== y); // returns: false
+
+
+
+
+/////////////////////////////////////////                NEVER DECLARE ANY UNMEANINGFUL VARIABLES               \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 
 
 // ALSO COMPARE LETTERS AND WORDS
