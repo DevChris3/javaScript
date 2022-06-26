@@ -1,0 +1,136 @@
+//              For Loops
+//          ==================
+
+// for ([initialExpression];[condition];[+/-Expression])
+for(let lyrics = 1; lyrics <= 6; lyrics++) {
+  console.log("Da ba dee da ba daa")
+}
+
+for(let i = 25; i >= 0; i-= 5) {
+  console.log(i)
+}
+
+
+//             Nested Loops
+//          ==================
+for (let i = 1; i <= 10; i++) {
+  console.log(`i is: ${i}`);
+  for (let j = 1; j <= 3; j++) {
+    console.log(`          j is: ${j}`);
+  }
+}
+//            Nested Arrays
+//          ==================
+const movieEvent = [
+  ['Crystal', 'Eric', 'George'],
+  ['Jimmy', 'Antonio', 'Kevin', 'Winfrey'],
+  ['Yuma', 'Jason', 'Kimberly', 'Abraham']
+]
+
+for (let i = 0; i < movieEvent.length; i++) {
+  const row = movieEvent[i];
+  console.log(`              ROW ${i + 1}`);
+  for (let j = 0; j < row.length; j++) {
+    console.log(row[j]); 
+  }
+}
+
+
+//             While Loops
+//          ==================
+let count = 0;
+while (count < 10) {
+  console.log(count)
+  count++; // loop will start from 0
+}
+//           ======================================
+//           NOTICE WHERE THE INCREMENT++ TAKES PLACE
+//           ======================================
+let num = 0;
+while (num < 10) {
+  num++ // loop will start from 1
+  console.log(num); 
+}
+
+let targetNum = Math.floor(Math.random() * 10);
+let guess = Math.floor(Math.random() * 10);
+
+while(true) {
+  guess = Math.floor(Math.random() * 10);
+  if (guess === targetNum) {
+    console.log(`Correct! You Guessed: ${guess} & targetNum was: ${targetNum}`)
+    break;
+  }
+  else {
+    console.log(`You Guessed ${guess}...Incorrect!`)
+    break;
+  }
+}
+console.log(targetNum);
+
+//            Break Keyword
+//          ==================
+//            For... Of Loop
+//          ==================
+
+const books = ['billy goat', 'harry potter', 'think & grow rich', 'good times', 'mindset shift'];
+
+for (let i = 0; i < books.length; i++) {
+  console.log(books[i]);
+}
+for (let book of books) {
+  console.log(book);
+}
+
+const raceCars = [
+  ['benz g30', 'infinity g60', 'acura rsx'],
+  ['honda sport', 'bmw x6 sport', 'dodge cherokee', 'acura tl'],
+  ['audi a6', 'camaro i9', 'lambo x5']
+];
+
+for (let raceCar of raceCars) {
+  for (let car of raceCar) {
+    console.log(car);
+  }
+}
+
+
+//            For...In Loop
+//          ==================
+
+
+
+//           Iterating Arrays
+//          ==================
+const animals = ['lions', 'tigers', 'monkey', 'bears']
+for (let i = 0; i < animals.length; i++){
+  console.log(i, animals[i]);
+  console.log('animals:', animals[1]);
+}
+
+
+//           Iterating Objects
+//          ===================
+
+
+const testScores = {
+  keenan: 80,
+  chris: 98,
+  jeff: 79,
+  jimmy: 85,
+  nadia: 97,
+  kim: 88,
+  larry: 72
+};
+
+for (let person in testScores) {
+  console.log(person, testScores[person]);
+}
+
+for (let score of Object.values(testScores)) {
+  console.log(score);
+}
+
+for (let score of Object.keys(testScores)) {
+  console.log(score);
+}
