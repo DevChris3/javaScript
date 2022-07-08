@@ -1,0 +1,29 @@
+// ============
+// this.keyword
+// ============
+
+const car = {
+    name: "lilly",
+    color: "blue",
+    breed: "american-skully",
+    meow() {
+        console.log(`${this.name} says MEOWWWW`);
+    }
+}
+
+car.meow()
+
+const person = {
+    firstname: "Billy",
+    lastname: "Joe",
+    age: 43,
+    haircolor: "brown",
+    Male() {
+        console.log(`Hello im ${this.firstname} ${this.lastname}`);
+    }
+}
+
+person.Male();
+
+
+// REsearch this.keyword depending on invocation of context.....
