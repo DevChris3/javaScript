@@ -1,0 +1,102 @@
+// =============================
+// RETURNING THE DAY OF THE WEEK
+// =============================
+
+// function returnDay(num) {
+//     let daysOfWeek = ['Monday', 'Tuesday', 'Wednesday',
+// 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+//     if(num < 1 || num > 7) {
+//         console.log(null);
+//     }else if(num === 1) {
+//         console.log(daysOfWeek[0]);
+//     }else if(num === 2) {
+//         console.log(daysOfWeek[1]);
+//     }else if(num === 3) {
+//         console.log(daysOfWeek[2]);
+//     }else if(num === 4) {
+//         console.log(daysOfWeek[3]);
+//     }else if(num === 5) {
+//         console.log(daysOfWeek[4]);
+//     }else if(num === 6) {
+//         console.log(daysOfWeek[5]);
+//     }else if(num === 7) {
+//         console.log(daysOfWeek[6]);
+//     }
+// }
+
+
+// =============
+// lexical scope
+// =============
+
+// function vehicle(){
+//     const car = ['Honda', 'Kia', 'Lexus', 'Benz'];
+//     function selectCar(){
+//         function carIsSelected() {
+//             for(let whip of car){
+//                 console.log(whip);
+//             }
+//         }carIsSelected()
+//     }selectCar()
+// }
+
+// vehicle();
+
+
+// function vehicle(cars){
+//     cars();
+//     cars();
+// }
+
+// function eachCar(c){
+//     for(let i = 0; i < 5; i++){
+//         c();
+//     }
+// }
+
+// function myCar(){
+//     const car = ['Honda', 'Ford', 'Lexus'];
+//     console.log(car);
+// }
+
+// vehicle(myCar);
+
+// ===================
+// RETURNING FUNCTIONS
+// ===================
+
+function makeMysteryFunc(){
+    const rand = Math.random();
+    if(rand > 0.5){
+        return function(){
+            console.log("CONGRATS, IM A GOOD FUNCTION");
+            console.log("CONGRATS, YOU WON A MILLION DOLLARS");
+        }
+    }else {
+        return function(){
+            console.log("YOU HAVE A COMPUTER VIRUS");
+            console.log("YOU ARE BEING HACKEDDDDDDDDD!!!");
+            console.log("SHUTDOWN YOUR LAPTOP NOW!!!");
+        }
+    }
+}
+
+function makeBetweenFunc(min, max){
+    return function (num){
+        return num >= min && num <= max;
+    }
+}
+
+// ================
+// DEFINING METHODS
+// ================
+
+const myMath = {
+    PI: 3.14159,
+    square: function(num){
+        return num * num;
+    },
+    cube: function(num){
+        return num ** 3;
+    }
+}
