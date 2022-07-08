@@ -1,0 +1,22 @@
+// just the basic understanding of TRY/CATCH
+
+// ==============
+// TRY / CATCH
+// YOU MUST ADD A CATCH OR FINALLY 
+// ==============
+try {
+    hello.toUpperCase(); // just an example
+} catch {
+    console.log("ERR0R!!!!");
+}
+
+// TRY / CATCH EXAMPLE
+
+function yell(msg) {
+    try {
+        console.log(msg.toUpperCase().repeat(3));
+    } catch (e) {
+        console.log(e);
+        console.log('PLEASE PASS A STRING...');
+    }
+}
